@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SaFouNaldo — Computer Vision / ML</title>
-  <meta name="description" content="Personal website of SaFouNaldo — projects, publications, and contact." />
+  <title>Yahya Skalli — Vision & ML</title>
+  <meta name="description" content="Personal website of Yahya Skalli — projects, publications, and contact." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -13,15 +13,17 @@
 <body>
   <header class="site-header">
     <div class="container hero">
-      <img class="avatar" src="img/profile.svg" alt="Profile" width="128" height="128" />
+      <!-- If you add img/profile.jpg or .png, it will show automatically. Falls back to SVG placeholder. -->
+      <img class="avatar" src="img/profile.jpg" alt="Profile" width="128" height="128" onerror="this.onerror=null;this.src='img/profile.svg';" />
       <div class="hero-copy">
-        <h1 class="name">SaFouNaldo</h1>
-        <p class="tagline">Researcher / Engineer — Vision &amp; ML</p>
+        <h1 class="name">Yahya Skalli</h1>
+        <p class="tagline">Computer Vision &amp; Machine Learning</p>
         <p class="bio">
-          I’m a <strong>computer vision &amp; machine learning</strong> enthusiast. I enjoy building and evaluating models for visual understanding and multimodal reasoning.
+          I work on multimodal models, vision systems, and efficient sequence modeling. I enjoy building simple, well-documented projects.
         </p>
         <nav class="links">
-          <a class="btn" href="mailto:you@example.com">Email</a>
+          <a class="btn" href="mailto:skalliyahya2003@gmail.com">Email</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/yahya-skalli-5a1426324" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn btn-secondary" href="#publications">Publications</a>
           <a class="btn btn-secondary" href="#projects">Projects</a>
         </nav>
@@ -30,6 +32,7 @@
   </header>
 
   <main class="container content">
+
     <section id="publications" class="section">
       <h2>Publications</h2>
 
@@ -37,66 +40,55 @@
         <h3>2025</h3>
         <ul class="pub-list">
           <li class="pub">
-            <div class="pub-title"><a href="#" target="_blank" rel="noopener">Example Paper Title: Evaluating Vision Models</a></div>
-            <div class="pub-meta"><span class="me">Your Name</span>, Coauthor One, Coauthor Two — <span class="venue">arXiv</span>, 2025</div>
+            <div class="pub-title">
+              <a href="pdf/Yahya_Skalli_Report.pdf" target="_blank" rel="noopener">
+                Finger Spelling Recognition for American Sign Language (CHILI Lab)
+              </a>
+            </div>
+            <div class="pub-meta"><span class="me">Yahya Skalli</span> — <span class="venue">Report</span>, Sept&nbsp;2024&nbsp;–&nbsp;Feb&nbsp;2025</div>
             <div class="pub-links">
-              <a href="#" target="_blank" rel="noopener">PDF</a>
-              <a href="#" target="_blank" rel="noopener">Code</a>
-              <a href="#" target="_blank" rel="noopener">Project</a>
+              <a href="pdf/Yahya_Skalli_Report.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="https://github.com/Signify-epfl/signify-app" target="_blank" rel="noopener">Code</a>
             </div>
           </li>
-        </ul>
-      </div>
-
-      <div class="pub-year">
-        <h3>2024</h3>
-        <ul class="pub-list">
           <li class="pub">
-            <div class="pub-title"><a href="#" target="_blank" rel="noopener">ViPer: Visual Personalization of Generative Models</a></div>
-            <div class="pub-meta"><span class="me">Your Name</span>, Another Coauthor — <span class="venue">ECCV</span>, 2024</div>
+            <div class="pub-title">
+              <a href="pdf/nano4M-Extended-Report.pdf" target="_blank" rel="noopener">
+                Extending nano4M for Video Generation for Human Poses
+              </a>
+            </div>
+            <div class="pub-meta"><span class="me">Yahya Skalli</span> (with collaborators) — <span class="venue">Project Report</span>, Feb&nbsp;2025&nbsp;–&nbsp;Jul&nbsp;2025</div>
             <div class="pub-links">
-              <a href="#" target="_blank" rel="noopener">PDF</a>
-              <a href="#" target="_blank" rel="noopener">Code</a>
-              <a href="#" target="_blank" rel="noopener">Project</a>
+              <a href="pdf/nano4M-Extended-Report.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="https://github.com/nano4M-video-generation-for-human-poses/nano4M-human-pose-video-gen/pulls" target="_blank" rel="noopener">Code</a>
             </div>
           </li>
         </ul>
       </div>
-
     </section>
 
     <section id="projects" class="section">
       <h2>Projects</h2>
       <div class="cards">
         <article class="card">
-          <h3 class="card-title">Multimodal Evaluations</h3>
-          <p class="card-body">A small framework to benchmark multimodal models on classical CV tasks (classification, detection, segmentation).</p>
+          <h3 class="card-title">CC‑Mamba</h3>
+          <p class="card-body">Chunk‑Conditioned Mamba: a hybrid approach for long‑context sequence modeling with linear‑time global memory. One‑pager below; code in progress.</p>
           <div class="card-actions">
-            <a class="btn btn-secondary" href="#" target="_blank" rel="noopener">Code</a>
-            <a class="btn btn-tertiary" href="#" target="_blank" rel="noopener">Demo</a>
-          </div>
-        </article>
-        <article class="card">
-          <h3 class="card-title">Flexible Tokens</h3>
-          <p class="card-body">Exploring 1D token sequences with variable length for image modeling.</p>
-          <div class="card-actions">
-            <a class="btn btn-secondary" href="#" target="_blank" rel="noopener">Code</a>
-            <a class="btn btn-tertiary" href="#" target="_blank" rel="noopener">Paper</a>
+            <a class="btn btn-secondary" href="pdf/1_pager_CC_Mamba.pdf" target="_blank" rel="noopener">One‑pager (PDF)</a>
+            <a class="btn btn-tertiary" href="#" aria-disabled="true" onclick="return false;">Code (coming soon)</a>
           </div>
         </article>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> SaFouNaldo. Built with simple static HTML/CSS.</p>
+      <p>&copy; <span id="year"></span> Yahya Skalli. Built with plain HTML/CSS.</p>
     </div>
   </footer>
 
-  <script>
-    // Set current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

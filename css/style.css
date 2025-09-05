@@ -1,4 +1,4 @@
-/* Minimal, clean, academic-ish layout inspired by many CV/ML personal pages */
+/* Minimal, clean, academic-ish layout */
 :root{
   --bg:#0b0b0c;
   --text:#e9e9ea;
@@ -19,7 +19,7 @@ a:hover{text-decoration:underline}
 
 .site-header{padding:48px 0 24px;border-bottom:1px solid rgba(255,255,255,0.08);background:linear-gradient(180deg, rgba(255,255,255,0.04), transparent)}
 .hero{display:grid;grid-template-columns:128px 1fr;grid-gap:24px;align-items:center}
-.avatar{border-radius:50%;box-shadow:var(--shadow);background:#222}
+.avatar{border-radius:50%;box-shadow:var(--shadow);background:#222;object-fit:cover}
 .name{font-size:40px;line-height:1.1;margin:0 0 6px}
 .tagline{margin:0 0 10px;color:var(--muted);font-weight:600}
 .bio{max-width:60ch;color:var(--text)}
